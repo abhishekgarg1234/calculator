@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>calculator</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+<div id="nav">
+<input type="text" id="expr" class="button" onkeyup="if (event.keyCode == 13){
+                        					cal();}
+						     else{ 
+						     		checkkey();}" autofocus>
+<button type="button" id="one" class="button" onclick=display2("(")>(</button><button type="button" id="one" class="button" onclick=display2(")")>)</button></br>
+<button type="button" id="one" class="button" onclick=display(1)>1</button>
+<button type="button" id="two" class="button" onclick=display(2)>2</button>
+<button type="button" id="three" class="button" onclick=display(3)>3</button>
+<button type="button" id="plus" class="button" onclick=display2("+")>+</button>
+<button type="button" id="mul" class="button" onclick=display2("*")>*</button><br>
+<button type="button" id="four" class="button" onclick=display(4)>4</button>
+<button type="button" id="five" class="button" onclick=display(5)>5</button>
+<button type="button" id="six" class="button" onclick=display(6)>6</button>
+<button type="button" id="minus" class="button" onclick=display2("-")>-</button>
+<button type="button" id="div" class="button" onclick=display2("/")>/</button><br>
+<button type="button" id="seven" class="button" onclick=display(7)>7</button>
+<button type="button" id="eight" class="button" onclick=display(8)>8</button>
+<button type="button" id="nine" class="button" onclick=display(9)>9</button>
+<button type="button" id="zero" class="button" onclick=display(0)>0</button> 
+<button type="button" id="equal" class="button" onclick=cal()>=</button>
+<button type="button" id="clear" class="button" onclick=display2("cl")>clear</button>
+<button type="button" id="backspace" class="button" onclick=display2("bk")>backspace</button>
+<button type="button" id="dot" class="button" onclick=display2(".")>.</button>
+<button type="button" id="power" class="button" onclick=display2("^")>^</button>
+</div>
+
+<script src="a.js"></script>
+
+</body>
+</html>
